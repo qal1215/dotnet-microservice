@@ -7,7 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{60
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{7D4F0B39-B74E-4548-BFDE-B6EFC09DD56D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{1E6307E6-5D51-4C5F-83B4-55450070A052}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{1E6307E6-5D51-4C5F-83B4-55450070A052}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{EBF4D027-449D-4E15-9453-90D546686A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{74EB91C4-2663-4627-99EF-CF5B56E5519A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{1E6307E6-5D51-4C5F-83B4-55450070A052}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E6307E6-5D51-4C5F-83B4-55450070A052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E6307E6-5D51-4C5F-83B4-55450070A052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74EB91C4-2663-4627-99EF-CF5B56E5519A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74EB91C4-2663-4627-99EF-CF5B56E5519A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74EB91C4-2663-4627-99EF-CF5B56E5519A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74EB91C4-2663-4627-99EF-CF5B56E5519A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +34,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7D4F0B39-B74E-4548-BFDE-B6EFC09DD56D} = {6043466C-7A93-43E9-85CF-33A9955CDCD4}
 		{1E6307E6-5D51-4C5F-83B4-55450070A052} = {7D4F0B39-B74E-4548-BFDE-B6EFC09DD56D}
+		{74EB91C4-2663-4627-99EF-CF5B56E5519A} = {EBF4D027-449D-4E15-9453-90D546686A7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98A12E1D-D09B-4195-8999-32951BBBF19C}
