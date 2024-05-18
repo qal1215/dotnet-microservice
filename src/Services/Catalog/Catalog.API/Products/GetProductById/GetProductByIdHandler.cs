@@ -1,10 +1,16 @@
-﻿
-using Catalog.API.Exceptions;
-
-namespace Catalog.API.Products.GetProductById;
+﻿namespace Catalog.API.Products.GetProductById;
 
 public record GetProductByIdQuery(Guid Id) : IQuery<GetProductByIdResult>;
+
 public record GetProductByIdResult(Product Product);
+
+public class GetProductByIdQueryValidator : AbstractValidator<GetProductByIdQuery>
+{
+    public GetProductByIdQueryValidator()
+    {
+        RuleFor(x => x.Id).NotEmpty().WithMessage("Id is required");
+    }
+}
 
 internal class GetProductByIdHandler
     (IDocumentSession session, ILogger<GetProductByIdHandler> logger)
@@ -18,7 +24,7 @@ internal class GetProductByIdHandler
 
         if (product is null)
         {
-            throw new ProductNotFoundException();
+            throw new ProductNotFoundException(query.Id);
         }
 
         return new GetProductByIdResult(product);
