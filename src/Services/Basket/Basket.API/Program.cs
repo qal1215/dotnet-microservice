@@ -44,8 +44,6 @@ var app = builder.Build();
 app.MapCarter();
 app.UseExceptionHandler(opts => { });
 
-Console.WriteLine("Redis::" + builder.Configuration.GetConnectionString("Redis"));
-
 app.UseHealthChecks("/health", new HealthCheckOptions
 {
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
